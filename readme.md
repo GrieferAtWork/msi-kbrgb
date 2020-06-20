@@ -10,18 +10,18 @@ There really isn't too much to it, but you can just look between the `/* BEGIN: 
 
 # Usage
 The program is self-documenting, and you can run `kbrgb --help`, but here are some examples:
-	- `kbrgb m:normal p:all:green:h` (Make the whole keyboard green)
-	- `kbrgb m:normal p:l:red:h p:m:green:h p:r:blue:h` (Make the whole keyboard RGB (RedGreenBlue))
-	- ...
+- `kbrgb m:normal p:all:green:h` (Make the whole keyboard green)
+- `kbrgb m:normal p:l:red:h p:m:green:h p:r:blue:h` (Make the whole keyboard RGB (RedGreenBlue))
+- ...
 
 # Dependencies
 You will need to have installed:
-	- A couple of standard-C headers (see top of `main.c`)
-	- [`hidapi`](https://github.com/signal11/hidapi)
-		- If you're using cygwin (like me), you don't even have to install this one from source.  
-		  Instead, from the cygwin installer, install the following packages:
-			- `libhidapi-devel`
-			- `libhidapi0`
+- A couple of standard-C headers (see top of `main.c`)
+- [`hidapi`](https://github.com/signal11/hidapi)
+	- If you're using cygwin (like me), you don't even have to install this one from source.  
+	  Instead, from the cygwin installer, install the following packages:
+		- `libhidapi-devel`
+		- `libhidapi0`
 And that's it
 
 # Building
@@ -29,8 +29,9 @@ Just run `make` from the cloned repo, or do your own `gcc -o kbrgb main.c -lhida
 
 # Tipps
 Since (at least for my laptop), the default color of the keyboard is all-red after boot (and I have yet to find a way of changing this), I've had the quite neat idea of setting up scheduled tasks to run the following:
-	- During logon: `kbrgb m:normal p:all:green:h`
-	- During logoff: `kbrgb m:normal p:all:red:h`
+- During logon: `kbrgb m:normal p:all:green:h`
+- During logoff: `kbrgb m:normal p:all:red:h`
+
 Meaning that while I'm logged in, the keyboard is green, but while I'm logged off, it's red (and since red is the default color, it will also be red until I log on for the first time)
 I think that's rather neat :)
 
