@@ -1,0 +1,27 @@
+{
+	"version": "0.2.1",
+	"defaults": {},
+	"configurations": [
+		{
+			"name": "run",
+			"project": "main.c",
+			"sourceFileMap": {
+				"/cygdrive/c": "C:\\",
+				"/cygdrive/d": "D:\\",
+				"/cygdrive/e": "E:\\",
+				"/cygdrive/f": "F:\\",
+				"/cygdrive/g": "G:\\",
+				"/cygdrive/h": "H:\\"
+			},
+			"type": "cppdbg",
+			"inheritEnvironments": [
+				"${cpp.activeConfiguration}"
+			],
+			"cwd": "${workspaceRoot}",
+			"program": "${workspaceRoot}\\kbrgb.exe",
+			"MIDebuggerPath": "gdb.exe",
+			"MIMode": "gdb",
+			"externalConsole": true
+		}
+	]
+}

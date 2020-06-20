@@ -1,0 +1,11 @@
+/.vs/slnx.sqlite
+/.vs/slnx.sqlite-journal
+/.vs/kbrgb
+/.vs/config
+/.vs/ProjectSettings.json
+/.vs/VSWorkspaceState.json
+
+
+/kbrgb
+*.o
+*.exe

@@ -1,0 +1,28 @@
+{
+	"projectName": "kbrgb",
+	"configurations": [
+		{
+			"name": "kbrgb",
+			"environments": [
+				{
+					"namespace": "env",
+					"environment": "kbrgb"
+				}
+			],
+			"includePath": [
+				"D:\\cyg\\root\\lib\\gcc\\x86_64-pc-cygwin\\9.3.0\\include",
+				"D:\\cyg\\root\\usr\\local\\include",
+				"D:\\cyg\\root\\usr\\include",
+				"D:\\cyg\\root\\usr\\include\\w32api",
+				"${workspaceRoot}"
+			],
+			"defines": [
+				"__CYGWIN__"
+			],
+			"forcedInclude": [
+			],
+			"compilerSwitches": "-x c -std=c++17",
+			"intelliSenseMode": "linux-gcc-x86"
+		}
+	]
+}
