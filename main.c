@@ -276,7 +276,7 @@ static void kb_setcolorpreset(uint8_t region, uint8_t color, uint8_t intensity) 
 }
 
 static void kb_setcolor(uint8_t region, uint8_t r, uint8_t g, uint8_t b) {
-	unsigned char buf[8] = { 1, 2, 64, region, r, g, b, 236 };
+	uint8_t buf[8] = { 1, 2, 64, region, r, g, b, 236 };
 	hid_send_feature_report(keyboard, buf, sizeof(buf));
 }
 /* END: Magic */
@@ -300,11 +300,9 @@ int main(int argc, char *argv[]) {
 		appname = *argv++;
 	}
 	while (argc) {
-		char cmd;
-		char *arg;
-		char *params[4];
+		char cmd, *arg, *region;
 		char lmr_str[6];
-		char *region;
+		char *params[4];
 		unsigned int paramc;
 		arg = *argv++;
 		if (strcmp(arg, "--help") == 0) {

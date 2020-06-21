@@ -1,6 +1,6 @@
 
 # msi-kbrgb
-A single-source-file C program to change set the colors of an MSI keyboard.
+A single-source-file C program to set the colors of a 3-region MSI keyboard. 
 
 # Disclaimer
 I did not reverse engineer the /magic/ used here myself. And looking around github in regards to the subject of home-made programs to set the colors of these keyboard, there's already more than one of them. However, none of the ones I managed to find were what this repo now holds: A simple, single-source-file, (probably portable), commandline C program with minimal dependencies

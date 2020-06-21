@@ -7,7 +7,7 @@ LDFLAGS  = $(CCFLAGS)
 LIBS    := -lhidapi
 
 ifeq ($(OS),Windows_NT)
-EXE    := .exe
+EXE     := .exe
 CCFLAGS := -mwindows $(CCFLAGS)
 endif
 
